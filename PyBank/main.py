@@ -91,7 +91,7 @@ with open(budget_csv, 'r') as budgetcsv:
 
 
 
-#Exporting the results to a text file
+#Exporting the results to a text file. Code provided by Xpert Learning Assistant - NEW!
 results_txt = os.path.join('PyBank', 'analysis', 'pybank_results.txt') 
     
 with  open(results_txt, 'w') as txtfile:
