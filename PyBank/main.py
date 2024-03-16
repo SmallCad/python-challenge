@@ -32,12 +32,22 @@ with open(budget_csv, 'r') as budgetcsv:
 
     for i in range(0, len(lst_of_profit) - 1):
          lst_of_changes.append(int(lst_of_profit[i+1]) - int(lst_of_profit[i]))
-    #while i in range(0, len(lst_of_profit)):
+    
+   
+    totalchange = 0
+    length = len(lst_of_changes)
+
+    for changes in lst_of_changes:
+       totalchange += changes
+       avchange = round(totalchange / length, 2)
+
+        
+        
 
         
      #declaring a variable named changes to record changes between months.
 
-    print(f'{lst_of_changes}')
+    print(f'{avchange}')
 
     
 
