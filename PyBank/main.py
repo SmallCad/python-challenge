@@ -2,7 +2,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-budget_csv = os.path.join('Resources', 'budget_data.csv')
+budget_csv = os.path.join('PyBank', 'Resources', 'budget_data.csv')
 
 
 
@@ -88,3 +88,23 @@ with open(budget_csv, 'r') as budgetcsv:
     print(f'Average Change: ${avchange} \n')
     print(f'Greatest Increase in Profits: {GIP[0]} ${GIP[1]} \n')
     print(f'Greatest Decrease in Profits: {GDP[0]} ${GDP[1]}')
+
+
+
+#Exporting the results to a text file
+results_txt = os.path.join('PyBank', 'analysis', 'pybank_results.txt') 
+    
+with  open(results_txt, 'w') as txtfile:
+    txtfile.write('Financial Analysis \n')
+    txtfile.write('-------------------------------------------- \n')
+    txtfile.write(f'Total Months: {len(lst_of_profit)} \n')  
+    txtfile.write(f'Average Change: ${avchange} \n') 
+    txtfile.write(f'Greatest Increase in Profits: {GIP[0]} ${GIP[1]} \n')
+    txtfile.write(f'Greatest Decrease in Profits: {GDP[0]} ${GDP[1]}')
+
+
+        
+
+
+
+
