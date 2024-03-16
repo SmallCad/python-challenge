@@ -76,9 +76,15 @@ with open(budget_csv, 'r') as budgetcsv:
 
 
         
-     #declaring a variable named changes to record changes between months.
-
-    print(*GDP, sep=", ")
+    
+    print('Financial Analysis \n ')
+    print('-------------------------------------------- \n')
+    print(f'Total Months: {len(lst_of_profit)}\n')    
+    print(f'Average Change: ${avchange} \n')
+    print(f'Greatest Increase in Profits: {GIP[0]} ${GIP[1]} \n')
+    print(f'Greatest Decrease in Profits: {GDP[0]} ${GDP[1]}')
+        
+ 
 
     
 
