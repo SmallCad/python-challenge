@@ -24,7 +24,7 @@ Thanks to users Jianru Shi and Steve Bennett for answering and providing the edi
  https://stackoverflow.com/questions/11178061/print-list-without-brackets-in-a-single-row
 
  
- Secondly, I wasn't sure how to go about exporting results to a text file. Slides for class go over how to exporting to a csv file and i tried following along the slides but the formatting did not seem presentable. I believe we did exporting to a .txt as a class example but I did not know which example file to check to confirm. --> Xpert Learning Assistant - NEW! was used to generate script for  exporting and my results to a .txt. The code below was pretty much used as is:
+ Secondly, I wasn't sure how to go about exporting results to a text file. Slides for class go over how to export a csv file and i tried following along the slides but the csv formatting did not seem presentable. I believe we did exporting to a .txt as a class example, but I did not know which example file to check to confirm. --> Xpert Learning Assistant - NEW! was used to generate script for  exporting my results to a .txt. The code below was pretty much used as is:
  
     with open('output.txt', 'w') as file:
 
