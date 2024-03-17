@@ -103,8 +103,3 @@ with  open(results_txt, 'w') as txtfile:
     txtfile.write(f'Greatest Decrease in Profits: {GDP[0]} ${GDP[1]}')
 
 
-        
-
-
-
-

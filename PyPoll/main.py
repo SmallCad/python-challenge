@@ -94,5 +94,4 @@ with  open(pypoll_txt, 'w') as txtfile:
     txtfile.write(f'------------------------- \n')
           
 
-
     
