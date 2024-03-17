@@ -15,3 +15,6 @@ with open('output.txt', 'w') as file:
     file.write("And one more line for good measure.\n")
 
 print("Data exported to output.txt successfully.")
+
+helped figuring out dictionary.get
+https://www.youtube.com/watch?v=daefaLgNkw0

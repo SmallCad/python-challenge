@@ -77,7 +77,21 @@ with open(poll_csv, 'r') as pollcsv:
     print(f'------------------------- \n')
                
 
+#Exporting the results to a text file. Code provided by Xpert Learning Assistant - NEW!
+pypoll_txt = os.path.join('Pypoll', 'analysis', 'pypoll_results.txt') 
+    
+with  open(pypoll_txt, 'w') as txtfile:
+    txtfile.write(f'Election Results \n ')
+    txtfile.write(f'------------------------- \n')
+    txtfile.write(f'Total Votes: {totalv} \n')
+    txtfile.write(f'------------------------- \n')
+    
+    for key in dict_candidates:
+         txtfile.write(f'{key}: {round(100*(int(dict_candidates[key])/totalv),3)}% ({(dict_candidates[key])}) \n')
 
+    txtfile.write(f'------------------------- \n')
+    txtfile.write(f'Winner: {winner} \n')
+    txtfile.write(f'------------------------- \n')
           
 
 
