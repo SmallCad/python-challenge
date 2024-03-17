@@ -26,12 +26,9 @@ Thanks to users Jianru Shi and Steve Bennett for answering and providing the edi
  
  Secondly, I wasn't sure how to go about exporting results to a text file. Slides for class go over how to exporting to a csv file and i tried following along the slides but the formatting did not seem presentable. I believe we did exporting to a .txt as a class example but I did not know which example file to check to confirm. --> Xpert Learning Assistant - NEW! was used to generate script for  exporting and my results to a .txt. The code below was pretty much used as is:
  
- Open a file in write mode
     with open('output.txt', 'w') as file:
-    # Write data to the file
-    file.write("Hello, this is some text that will be written to the file.\n")
-    file.write("This is another line of text.\n")
-    file.write("And one more line for good measure.\n")
+
+    file.write("Hello, this is some text that will be written to the file.\n")s
 
 Lastly, in my Pypoll script, i ran into a road block trying to test an if condition. initially, my code ran fine in a sorted list where a candidates name did not show up again after an initial iteration. however, candidates could be voted for in different counties so their could be reiterations after a break. I needed a way to check if a given key for my dictionary already had stored data. I am not sure if this was covered in class but using the youtube link below, I came accross dictionary.get() function that was a safe way of returning a value assigned to a key or returning 'None' if that key did not exist within the dictionary.
 thus checking for a key not yet established became:
