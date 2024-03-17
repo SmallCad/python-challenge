@@ -17,7 +17,7 @@ with open(poll_csv, 'r') as pollcsv:
 
     #Declaring variables given my objectives to find (1)total votes, (2)A complete list of
     #   candidates who received votes, (3)The total number of votes each candidate won. this
-    #   can be store along side candidates in a dictionary. (4) The winner of the election 
+    #   can be stored along side candidates in a dictionary. (4) The winner of the election 
     #   based on popular vote
 
     totalv = 0
@@ -81,7 +81,7 @@ with open(poll_csv, 'r') as pollcsv:
 pypoll_txt = os.path.join('Pypoll', 'analysis', 'pypoll_results.txt') 
     
 with  open(pypoll_txt, 'w') as txtfile:
-    txtfile.write(f'Election Results \n ')
+    txtfile.write(f'Election Results\n ')
     txtfile.write(f'------------------------- \n')
     txtfile.write(f'Total Votes: {totalv} \n')
     txtfile.write(f'------------------------- \n')
