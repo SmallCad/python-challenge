@@ -96,7 +96,7 @@ results_txt = os.path.join('PyBank', 'analysis', 'pybank_results.txt')
     
 with  open(results_txt, 'w') as txtfile:
     txtfile.write('Financial Analysis \n')
-    txtfile.write('-------------------------------------------- \n')
+    txtfile.write('---------------------------- \n')
     txtfile.write(f'Total Months: {len(lst_of_profit)} \n')  
     txtfile.write(f'Average Change: ${avchange} \n') 
     txtfile.write(f'Greatest Increase in Profits: {GIP[0]} ${GIP[1]} \n')
