@@ -2,7 +2,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-budget_csv = os.path.join('PyBank', 'Resources', 'budget_data.csv')
+budget_csv = os.path.join('Resources', 'budget_data.csv')
 
 
 
@@ -92,7 +92,7 @@ with open(budget_csv, 'r') as budgetcsv:
 
 
 #Exporting the results to a text file. Code provided by Xpert Learning Assistant - NEW!
-results_txt = os.path.join('PyBank', 'analysis', 'pybank_results.txt') 
+results_txt = os.path.join('analysis', 'pybank_results.txt') 
     
 with  open(results_txt, 'w') as txtfile:
     txtfile.write('Financial Analysis \n')

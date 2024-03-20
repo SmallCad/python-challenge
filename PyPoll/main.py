@@ -2,7 +2,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-poll_csv = os.path.join('Pypoll', 'Resources', 'election_data.csv')
+poll_csv = os.path.join('Resources', 'election_data.csv')
 
 
 
@@ -78,7 +78,7 @@ with open(poll_csv, 'r') as pollcsv:
                
 
 #Exporting the results to a text file. Code provided by Xpert Learning Assistant - NEW!
-pypoll_txt = os.path.join('Pypoll', 'analysis', 'pypoll_results.txt') 
+pypoll_txt = os.path.join('analysis', 'pypoll_results.txt') 
     
 with  open(pypoll_txt, 'w') as txtfile:
     txtfile.write(f'Election Results\n ')
@@ -86,6 +86,8 @@ with  open(pypoll_txt, 'w') as txtfile:
     txtfile.write(f'Total Votes: {totalv} \n')
     txtfile.write(f'------------------------- \n')
     
+    #A for loop can be used to loop through the candidates dictionary and print their names
+        # vote percentages and vote count.
     for key in dict_candidates:
          txtfile.write(f'{key}: {round(100*(int(dict_candidates[key])/totalv),3)}% ({(dict_candidates[key])}) \n')
 
